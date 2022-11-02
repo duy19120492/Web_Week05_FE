@@ -33,7 +33,7 @@ function Login() {
     );
 
     async function postDataLogin() {
-        return await axios.post(process.env.REACT_APP_API_URL + 'login', user);
+        return await axios.post('https://sheltered-hamlet-20660.herokuapp.com/login', user);
     }
     
     if (isLoading) {

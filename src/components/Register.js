@@ -26,7 +26,7 @@ function Register() {
         }
     );
     async function postData() {
-        return await axios.post(process.env.REACT_APP_API_URL + 'register', user);
+        return await axios.post('https://sheltered-hamlet-20660.herokuapp.com/register', user);
     }
 
     if (isLoading) {
